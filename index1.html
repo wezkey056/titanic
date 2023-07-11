@@ -1,0 +1,99 @@
+<html>
+	<style>
+
+
+
+
+		h1 {
+			text-align: center;
+		}
+
+		.women {
+			width: 100px;
+			height: 100px;
+			fill:  red;
+			transition: width 2s;
+			rx: 15px;
+		}
+
+		.women:hover {
+			width: 1332px;
+			height: 100px;
+		}
+
+
+		.children{
+			height: 100px;
+			width: 100px;
+			fill: purple;
+			transition: width 2s;
+			rx: 15px;
+		}
+
+		.children:hover {
+			width: 1062px;
+			height: 100px;
+		}
+
+		.men {
+			width: 100px;
+			height: 100px;
+			fill: blue;
+			transition: width 2s;
+			rx: 15px;
+		}
+
+		.men:hover{
+			width: 342;
+			height: 100px;
+		}
+
+
+
+		div {
+			margin: 30px;
+			font-family:  arial;
+			border:solid 2px;
+			padding: 30px;
+			border-radius: 15px;
+		}
+
+
+		svg {
+			border: solid 2px;
+			border-radius: 15px;
+			background-color: white;
+		}
+
+		.cdt {
+			font-size: 20px;
+			font-weight: bolder;
+		}
+
+	</style>
+	<div>
+		<h1>Titanic Survival Rate Data</h1>
+		<p>This is the result of our Titanic analysis. </p>
+		<p>We used a CSV dataset from Kaggle which included information about passengers on the Titanic such as their age or gender. </p>
+		<p>We created a sequential search algorithm that went through the CSV dataset collecting information. </p>
+
+		<img src='titanic_image.webp'  width='500px'>
+
+		<br>
+
+		<h2>Study Conclusion</h2>
+		<p>The percentage rate indicates the survival rate of the corresponding group.</p>
+
+		<svg width='1750' height='375'>
+			<rect class='women' ></rect>
+			<text x='25' y='25' fill='white'>Women</text>
+			<text x='650' y='60' fill='white' class='cdt'>74%</text>
+			<rect class='children' y='125'></rect>
+			<text x='25' y='150' fill='white'>Children</text>
+			<text x='500' y='175' fill='white' class='cdt'>59%</text>
+			<rect y='250' class='men'></rect>
+			<text x='25' y='275' fill='white'>Men</text>
+			<text x='170' y='300' fill='white' class='cdt'>19%</text>
+		</svg>
+	</div>
+</html>

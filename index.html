@@ -1,20 +1,54 @@
+<!DOCTYPE HTML>
 <html>
+<head>
+<style>
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: white;
+    text-align:center;
+}
+
+p {
+    font-family: verdana;
+    color: #753a88;
+    font-size: 20px;
+}
+
+text {
+    font-size: 20px;
+    }
+
+
+
+</style>
+</head>
+
+<body>
+
 
     <h1>Titaninc Survival Rate Data</h1>
-    <p>This is the result of our Titanic analysis.</p>
+    <p><b>This is the result of our Titanic analysis.<b></p>
     <img src='titanic_image.webp'  width='500px'>
     <br>
 
     <h2>Study Conclusion</h2>
     
-    <svg width='800' height='500'>
-        <rect width='740' height='100' fill='#ff0303'></rect>
-        <text x='25' y='25' fill='white'>Women</text>
-        <rect y='125' width='590' height='100' fill='purple'></rect>
-        <text x='25' y='150' fill='white'>Children</text>
-        <rect y='250' width='190' height='100' fill='blue'></rect>
-        <text x='25' y='275' fill='white'>Men</text>
+    <svg width='1000' height='500' style="background-color:white">
+    
+        <rect y='50' x='10' width='740' height='100' fill='#ff0303'></rect>
+        <text x='75' y='75' fill='white'>Women</text>
+        <text id='texd1' x='370' y='110' fill='white'>74%</text>
+        <rect y='175' x='10' width='590' height='100' fill='purple'></rect>
+        <text x='75' y='200' fill='white'>Children</text>
+        <text id='texd2' x='295' y='235' fill='white'>59%</text>
+        <rect y='300' x='10' width='190' height='100' fill='blue'></rect>
+        <text x='75' y='325' fill='white'>Men</text>
+        <text id='texd3' x='95' y='360' fill='white'>59%</text>
     </svg>
 
-
+</body>
 </html>
